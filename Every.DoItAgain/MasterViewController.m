@@ -40,10 +40,12 @@
 
 - (void)insertNewObject:(id)sender {
     NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
-    Event *newEvent = [[Event alloc] initWithContext:context];
+    Todo *newTodo = [[Todo alloc] initWithContext:context];
         
     // If appropriate, configure the new managed object.
-    newEvent.timestamp = [NSDate date];
+    newTodo.todoDescription = @"testing string";
+    newTodo.title = @"testing title";
+    newTodo.priorityNumber = 3;
         
     // Save the context.
     NSError *error = nil;
@@ -114,7 +116,7 @@
 
 
 - (void)configureCell:(UITableViewCell *)cell withTodo:(Todo *)todo {
-    cell.textLabel.text = todo.todoDescription;
+    cell.textLabel.text = todo.title;
 }
 
 
@@ -125,13 +127,13 @@
         return _fetchedResultsController;
     }
     
-    NSFetchRequest<Event *> *fetchRequest = Event.fetchRequest;
+    NSFetchRequest<Todo *> *fetchRequest = Todo.fetchRequest;
     
     // Set the batch size to a suitable number.
     [fetchRequest setFetchBatchSize:20];
     
     // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"timestamp" ascending:NO];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"title" ascending:NO];
 
     [fetchRequest setSortDescriptors:@[sortDescriptor]];
     
