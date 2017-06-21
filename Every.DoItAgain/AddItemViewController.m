@@ -22,6 +22,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    //if (![[defaults stringForKey:@"title"] isEqualToString:@""]) {
+        
+        self.titleField.text = [defaults stringForKey:@"title"];
+        
+    //} else if (![[defaults stringForKey:@"todoDescription"] isEqualToString:@""]) {
+        
+        self.descriptionField.text = [defaults stringForKey:@"todoDescription"];
+        
+    if ([[defaults objectForKey:@"priorityNumber"] intValue] != 0) {
+        
+        self.priorityField.text = [defaults stringForKey:@"priorityNumber"];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {
