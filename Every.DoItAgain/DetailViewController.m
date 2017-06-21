@@ -7,7 +7,7 @@
 //
 
 #import "DetailViewController.h"
-
+#import "MyThemes.h"
 @interface DetailViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
@@ -24,6 +24,9 @@
         self.titleLabel.text = self.detailItem.title;
         self.detailDescriptionLabel.text = self.detailItem.todoDescription;
         self.priorityField.text = [NSString stringWithFormat:@"%d",self.detailItem.priorityNumber];
+        self.titleLabel.theme_textColor = globalTextColorPicker;
+        self.detailDescriptionLabel.theme_textColor = globalTextColorPicker;
+        self.priorityField.theme_textColor = globalTextColorPicker;
     }
 }
 
@@ -31,6 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.view.theme_backgroundColor = globalBackgroundColorPicker;
     [self configureView];
 }
 

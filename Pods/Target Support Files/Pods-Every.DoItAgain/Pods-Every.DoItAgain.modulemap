@@ -1,0 +1,6 @@
+framework module Pods_Every_DoItAgain {
+  umbrella header "Pods-Every.DoItAgain-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+
 #import "Every_DoItAgain+CoreDataModel.h"
 #import "AddItemViewController.h"
+
 @class DetailViewController;
 
 @interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>

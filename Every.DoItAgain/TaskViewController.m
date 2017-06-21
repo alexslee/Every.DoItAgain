@@ -7,7 +7,8 @@
 //
 
 #import "TaskViewController.h"
-
+#import <SwiftTheme/SwiftTheme-Swift.h>
+#import "Global.h"
 @interface TaskViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *titleField;
@@ -16,12 +17,16 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *priorityField;
 
+@property (weak, nonatomic) IBOutlet UILabel *setDefaultsHeader;
+
 @end
 
 @implementation TaskViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.theme_backgroundColor = globalBackgroundColorPicker;
+    self.setDefaultsHeader.theme_textColor = globalTextColorPicker;
     // Do any additional setup after loading the view.
 }
 

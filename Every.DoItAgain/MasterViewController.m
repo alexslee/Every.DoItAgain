@@ -5,12 +5,14 @@
 //  Created by Alex Lee on 2017-06-21.
 //  Copyright © 2017 Alex Lee. All rights reserved.
 //
-
+#import <SwiftTheme/SwiftTheme-Swift.h>
+#import "Global.h"
+#import "MyThemes.h"
 #import "MasterViewController.h"
 #import "DetailViewController.h"
 
 @interface MasterViewController ()
-
+@property (nonatomic)BOOL isNight;
 @end
 
 @implementation MasterViewController
@@ -19,13 +21,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     //self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
+    self.isNight = NO;
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
+    UIBarButtonItem *themeButton = [[UIBarButtonItem alloc] initWithTitle:@"Day/Night" style:UIBarButtonItemStylePlain target:self action:@selector(toggleNightMode:)];
+    self.navigationItem.rightBarButtonItems = @[themeButton,addButton];
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    self.tableView.theme_backgroundColor = globalBackgroundColorPicker;
     
 }
 
+- (void)toggleNightMode:(id)sender {
+    [MyThemes switchNight:!self.isNight];
+    self.isNight = !self.isNight;
+}
 
 - (void)viewWillAppear:(BOOL)animated {
     self.clearsSelectionOnViewWillAppear = self.splitViewController.isCollapsed;
@@ -124,6 +132,8 @@
 
 - (void)configureCell:(UITableViewCell *)cell withTodo:(Todo *)todo {
     cell.textLabel.text = todo.title;
+    cell.theme_backgroundColor = globalBackgroundColorPicker;
+    cell.textLabel.theme_textColor = globalTextColorPicker;
 }
 
 

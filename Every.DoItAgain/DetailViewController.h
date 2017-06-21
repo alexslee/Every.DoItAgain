@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "Every_DoItAgain+CoreDataModel.h"
-
+#import "Global.h"
+#import <SwiftTheme/SwiftTheme-Swift.h>
 @interface DetailViewController : UIViewController
 
 @property (strong, nonatomic) Todo *detailItem;

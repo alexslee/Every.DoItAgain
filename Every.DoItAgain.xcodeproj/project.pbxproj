@@ -18,9 +18,12 @@
 		43ACAA231EFACBA700D5BE49 /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ACAA221EFACBA700D5BE49 /* AddItemViewController.m */; };
 		43ACAA261EFACE3700D5BE49 /* PriorityTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ACAA251EFACE3700D5BE49 /* PriorityTextField.m */; };
 		43ACAA291EFADDDC00D5BE49 /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ACAA281EFADDDC00D5BE49 /* TaskViewController.m */; };
+		43ACAA331EFAFFAC00D5BE49 /* MyThemes.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ACAA321EFAFFAC00D5BE49 /* MyThemes.m */; };
+		F2EDAE5EE74165A678A36E16 /* Pods_Every_DoItAgain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B941374FCB24FA746A8661 /* Pods_Every_DoItAgain.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1ECBBD2D60F684790F178ADC /* Pods-Every.DoItAgain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Every.DoItAgain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Every.DoItAgain/Pods-Every.DoItAgain.debug.xcconfig"; sourceTree = "<group>"; };
 		43ACA9FE1EFA459900D5BE49 /* Every.DoItAgain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Every.DoItAgain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43ACAA021EFA459900D5BE49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		43ACAA041EFA459900D5BE49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +43,11 @@
 		43ACAA251EFACE3700D5BE49 /* PriorityTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriorityTextField.m; sourceTree = "<group>"; };
 		43ACAA271EFADDDC00D5BE49 /* TaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskViewController.h; sourceTree = "<group>"; };
 		43ACAA281EFADDDC00D5BE49 /* TaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskViewController.m; sourceTree = "<group>"; };
+		43ACAA301EFAFFAC00D5BE49 /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		43ACAA311EFAFFAC00D5BE49 /* MyThemes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyThemes.h; sourceTree = "<group>"; };
+		43ACAA321EFAFFAC00D5BE49 /* MyThemes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyThemes.m; sourceTree = "<group>"; };
+		879A7FFFC5450E0946EF9F3B /* Pods-Every.DoItAgain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Every.DoItAgain.release.xcconfig"; path = "Pods/Target Support Files/Pods-Every.DoItAgain/Pods-Every.DoItAgain.release.xcconfig"; sourceTree = "<group>"; };
+		E9B941374FCB24FA746A8661 /* Pods_Every_DoItAgain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Every_DoItAgain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2EDAE5EE74165A678A36E16 /* Pods_Every_DoItAgain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +67,8 @@
 			children = (
 				43ACAA001EFA459900D5BE49 /* Every.DoItAgain */,
 				43ACA9FF1EFA459900D5BE49 /* Products */,
+				4C5F490CA4DE18562EB49461 /* Pods */,
+				7CA05AD0501FD583E98EA119 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +83,9 @@
 		43ACAA001EFA459900D5BE49 /* Every.DoItAgain */ = {
 			isa = PBXGroup;
 			children = (
+				43ACAA301EFAFFAC00D5BE49 /* Global.h */,
+				43ACAA311EFAFFAC00D5BE49 /* MyThemes.h */,
+				43ACAA321EFAFFAC00D5BE49 /* MyThemes.m */,
 				43ACAA041EFA459900D5BE49 /* AppDelegate.h */,
 				43ACAA051EFA459900D5BE49 /* AppDelegate.m */,
 				43ACAA241EFACE3700D5BE49 /* PriorityTextField.h */,
@@ -102,6 +116,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4C5F490CA4DE18562EB49461 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1ECBBD2D60F684790F178ADC /* Pods-Every.DoItAgain.debug.xcconfig */,
+				879A7FFFC5450E0946EF9F3B /* Pods-Every.DoItAgain.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7CA05AD0501FD583E98EA119 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9B941374FCB24FA746A8661 /* Pods_Every_DoItAgain.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +140,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43ACAA1B1EFA459900D5BE49 /* Build configuration list for PBXNativeTarget "Every.DoItAgain" */;
 			buildPhases = (
+				B25B4305B4F260788B768DF5 /* [CP] Check Pods Manifest.lock */,
 				43ACA9FA1EFA459900D5BE49 /* Sources */,
 				43ACA9FB1EFA459900D5BE49 /* Frameworks */,
 				43ACA9FC1EFA459900D5BE49 /* Resources */,
+				3F80AED9128DF670F3924479 /* [CP] Embed Pods Frameworks */,
+				60AAF5E0F5DABEAA7D8F7C3D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +202,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F80AED9128DF670F3924479 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Every.DoItAgain/Pods-Every.DoItAgain-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60AAF5E0F5DABEAA7D8F7C3D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Every.DoItAgain/Pods-Every.DoItAgain-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B25B4305B4F260788B768DF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		43ACA9FA1EFA459900D5BE49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -179,6 +261,7 @@
 				43ACAA0C1EFA459900D5BE49 /* MasterViewController.m in Sources */,
 				43ACAA061EFA459900D5BE49 /* AppDelegate.m in Sources */,
 				43ACAA031EFA459900D5BE49 /* main.m in Sources */,
+				43ACAA331EFAFFAC00D5BE49 /* MyThemes.m in Sources */,
 				43ACAA261EFACE3700D5BE49 /* PriorityTextField.m in Sources */,
 				43ACAA091EFA459900D5BE49 /* Every_DoItAgain.xcdatamodeld in Sources */,
 			);
@@ -300,6 +383,7 @@
 		};
 		43ACAA1C1EFA459900D5BE49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ECBBD2D60F684790F178ADC /* Pods-Every.DoItAgain.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Every.DoItAgain/Info.plist;
@@ -311,6 +395,7 @@
 		};
 		43ACAA1D1EFA459900D5BE49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 879A7FFFC5450E0946EF9F3B /* Pods-Every.DoItAgain.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Every.DoItAgain/Info.plist;
@@ -339,6 +424,7 @@
 				43ACAA1D1EFA459900D5BE49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

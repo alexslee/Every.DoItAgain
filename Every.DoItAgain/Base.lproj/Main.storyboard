@@ -41,7 +41,7 @@
                         <subviews>
                             <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Detail view content goes here" lineBreakMode="tailTruncation" numberOfLines="7" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="0XM-y9-sOw">
                                 <rect key="frame" x="16" y="114" width="339" height="17"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" size="system"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,8 +52,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="#" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3T-6i-Zrf">
-                                <rect key="frame" x="348" y="75" width="11" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3T-6i-Zrf">
+                                <rect key="frame" x="348" y="73.5" width="11" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -127,7 +127,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="default priority (1-5)..." textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="F98-eC-mFe">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="default priority (1-5)..." textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="F98-eC-mFe" customClass="PriorityTextField">
                                 <rect key="frame" x="47.5" y="187" width="281" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -161,6 +161,7 @@
                     <connections>
                         <outlet property="descriptionField" destination="8Aa-kX-Vyq" id="Bbq-7H-aFn"/>
                         <outlet property="priorityField" destination="F98-eC-mFe" id="K5f-rK-O2x"/>
+                        <outlet property="setDefaultsHeader" destination="iU8-hY-WgO" id="Tn0-Kc-7Hm"/>
                         <outlet property="titleField" destination="OBh-gH-ttk" id="5yS-It-hOx"/>
                     </connections>
                 </viewController>
@@ -274,6 +275,7 @@
                     </view>
                     <connections>
                         <outlet property="descriptionField" destination="jKF-tR-QYP" id="msk-en-7Bg"/>
+                        <outlet property="doneButton" destination="GJT-Yo-k9F" id="rRg-HZ-Smt"/>
                         <outlet property="priorityField" destination="aUt-iY-ENY" id="EPi-ag-iFn"/>
                         <outlet property="titleField" destination="LhE-AG-3cL" id="WKP-zj-JQm"/>
                     </connections>

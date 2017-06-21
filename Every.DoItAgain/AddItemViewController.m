@@ -15,6 +15,8 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *priorityField;
 
+@property (weak, nonatomic) IBOutlet UIButton *doneButton;
+
 @end
 
 @implementation AddItemViewController
@@ -22,6 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.theme_backgroundColor = globalBackgroundColorPicker;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
     //if (![[defaults stringForKey:@"title"] isEqualToString:@""]) {

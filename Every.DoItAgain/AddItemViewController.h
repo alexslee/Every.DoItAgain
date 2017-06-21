@@ -7,7 +7,8 @@
 //
 #import <CoreData/CoreData.h>
 #import <UIKit/UIKit.h>
-
+#import "Global.h"
+#import <SwiftTheme/SwiftTheme-Swift.h>
 @interface AddItemViewController : UIViewController
 
 @property (nonatomic) NSManagedObjectContext *managedObjectContext;
