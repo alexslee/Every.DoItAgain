@@ -44,7 +44,7 @@
     [managedObject setValue:self.titleField.text forKey:@"title"];
     [managedObject setValue:self.descriptionField.text forKey:@"todoDescription"];
     [managedObject setValue:[NSNumber numberWithInt:[self.priorityField.text intValue]] forKey:@"priorityNumber"];
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 @end
