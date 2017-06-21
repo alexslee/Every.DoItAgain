@@ -86,28 +86,13 @@
 		43ACAA001EFA459900D5BE49 /* Every.DoItAgain */ = {
 			isa = PBXGroup;
 			children = (
-				43ACAA301EFAFFAC00D5BE49 /* Global.h */,
-				43ACAA311EFAFFAC00D5BE49 /* MyThemes.h */,
-				43ACAA321EFAFFAC00D5BE49 /* MyThemes.m */,
+				43ACAA3E1EFB152100D5BE49 /* Models */,
 				43ACAA041EFA459900D5BE49 /* AppDelegate.h */,
 				43ACAA051EFA459900D5BE49 /* AppDelegate.m */,
-				43ACAA241EFACE3700D5BE49 /* PriorityTextField.h */,
-				43ACAA251EFACE3700D5BE49 /* PriorityTextField.m */,
-				43ACAA211EFACBA700D5BE49 /* AddItemViewController.h */,
-				43ACAA221EFACBA700D5BE49 /* AddItemViewController.m */,
-				43ACAA0D1EFA459900D5BE49 /* DetailViewController.h */,
-				43ACAA0E1EFA459900D5BE49 /* DetailViewController.m */,
-				43ACAA391EFB0FA800D5BE49 /* LoginViewController.h */,
-				43ACAA3A1EFB0FA800D5BE49 /* LoginViewController.m */,
-				43ACAA271EFADDDC00D5BE49 /* TaskViewController.h */,
-				43ACAA281EFADDDC00D5BE49 /* TaskViewController.m */,
-				43ACAA0A1EFA459900D5BE49 /* MasterViewController.h */,
-				43ACAA0B1EFA459900D5BE49 /* MasterViewController.m */,
-				43ACAA101EFA459900D5BE49 /* Main.storyboard */,
+				43ACAA3D1EFB151100D5BE49 /* View Controllers */,
+				43ACAA3F1EFB153400D5BE49 /* Views */,
 				43ACAA131EFA459900D5BE49 /* Assets.xcassets */,
-				43ACAA151EFA459900D5BE49 /* LaunchScreen.storyboard */,
 				43ACAA181EFA459900D5BE49 /* Info.plist */,
-				43ACAA071EFA459900D5BE49 /* Every_DoItAgain.xcdatamodeld */,
 				43ACAA011EFA459900D5BE49 /* Supporting Files */,
 			);
 			path = Every.DoItAgain;
@@ -119,6 +104,45 @@
 				43ACAA021EFA459900D5BE49 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43ACAA3D1EFB151100D5BE49 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				43ACAA211EFACBA700D5BE49 /* AddItemViewController.h */,
+				43ACAA221EFACBA700D5BE49 /* AddItemViewController.m */,
+				43ACAA0D1EFA459900D5BE49 /* DetailViewController.h */,
+				43ACAA0E1EFA459900D5BE49 /* DetailViewController.m */,
+				43ACAA391EFB0FA800D5BE49 /* LoginViewController.h */,
+				43ACAA3A1EFB0FA800D5BE49 /* LoginViewController.m */,
+				43ACAA271EFADDDC00D5BE49 /* TaskViewController.h */,
+				43ACAA281EFADDDC00D5BE49 /* TaskViewController.m */,
+				43ACAA0A1EFA459900D5BE49 /* MasterViewController.h */,
+				43ACAA0B1EFA459900D5BE49 /* MasterViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		43ACAA3E1EFB152100D5BE49 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				43ACAA071EFA459900D5BE49 /* Every_DoItAgain.xcdatamodeld */,
+				43ACAA301EFAFFAC00D5BE49 /* Global.h */,
+				43ACAA311EFAFFAC00D5BE49 /* MyThemes.h */,
+				43ACAA321EFAFFAC00D5BE49 /* MyThemes.m */,
+				43ACAA241EFACE3700D5BE49 /* PriorityTextField.h */,
+				43ACAA251EFACE3700D5BE49 /* PriorityTextField.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		43ACAA3F1EFB153400D5BE49 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				43ACAA101EFA459900D5BE49 /* Main.storyboard */,
+				43ACAA151EFA459900D5BE49 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		4C5F490CA4DE18562EB49461 /* Pods */ = {
