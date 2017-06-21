@@ -10,6 +10,10 @@
 
 @interface DetailViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *priorityField;
+
 @end
 
 @implementation DetailViewController
@@ -17,7 +21,9 @@
 - (void)configureView {
     // Update the user interface for the detail item.
     if (self.detailItem) {
+        self.titleLabel.text = self.detailItem.title;
         self.detailDescriptionLabel.text = self.detailItem.todoDescription;
+        self.priorityField.text = [NSString stringWithFormat:@"%d",self.detailItem.priorityNumber];
     }
 }
 
