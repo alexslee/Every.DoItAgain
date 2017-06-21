@@ -6,6 +6,7 @@
 //  Copyright © 2017 Alex Lee. All rights reserved.
 //
 #import <SwiftTheme/SwiftTheme-Swift.h>
+#import <SAMKeychain/SAMKeychain.h>
 #import "Global.h"
 #import "MyThemes.h"
 #import "MasterViewController.h"
@@ -13,6 +14,7 @@
 
 @interface MasterViewController ()
 @property (nonatomic)BOOL isNight;
+@property (nonatomic) BOOL isLoggedIn;
 @end
 
 @implementation MasterViewController
@@ -38,6 +40,13 @@
 - (void)viewWillAppear:(BOOL)animated {
     self.clearsSelectionOnViewWillAppear = self.splitViewController.isCollapsed;
     [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    if (!self.isLoggedIn) {
+        [self performSegueWithIdentifier:@"loginSegue" sender:self];
+        self.isLoggedIn = YES;
+    }
 }
 
 

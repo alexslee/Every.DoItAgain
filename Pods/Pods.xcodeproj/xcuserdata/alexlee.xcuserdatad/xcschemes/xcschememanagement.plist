@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SAMKeychain.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftTheme.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>A32D20663ADB43DAC68A86B4CCFE5874</key>
+		<key>3B50DD1347CEB6228D7122E8BFE0D94C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EEF6BB4DE06484BFEF24E1D480D3D6FD</key>
+		<key>4EC7321A4541CDA7AE86B3D150BBF794</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6E9E1996E1BF6C6C7221B7FA6B80CD2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
-
 #import "Every_DoItAgain+CoreDataModel.h"
 #import "AddItemViewController.h"
 

@@ -9,5 +9,6 @@ target 'Every.DoItAgain' do
     use_frameworks!
 
     pod 'SwiftTheme'
+    pod 'SAMKeychain'
 
 end

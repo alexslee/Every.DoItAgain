@@ -19,6 +19,7 @@
 		43ACAA261EFACE3700D5BE49 /* PriorityTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ACAA251EFACE3700D5BE49 /* PriorityTextField.m */; };
 		43ACAA291EFADDDC00D5BE49 /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ACAA281EFADDDC00D5BE49 /* TaskViewController.m */; };
 		43ACAA331EFAFFAC00D5BE49 /* MyThemes.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ACAA321EFAFFAC00D5BE49 /* MyThemes.m */; };
+		43ACAA3B1EFB0FA800D5BE49 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ACAA3A1EFB0FA800D5BE49 /* LoginViewController.m */; };
 		F2EDAE5EE74165A678A36E16 /* Pods_Every_DoItAgain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B941374FCB24FA746A8661 /* Pods_Every_DoItAgain.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,8 @@
 		43ACAA301EFAFFAC00D5BE49 /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		43ACAA311EFAFFAC00D5BE49 /* MyThemes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyThemes.h; sourceTree = "<group>"; };
 		43ACAA321EFAFFAC00D5BE49 /* MyThemes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyThemes.m; sourceTree = "<group>"; };
+		43ACAA391EFB0FA800D5BE49 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		43ACAA3A1EFB0FA800D5BE49 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		879A7FFFC5450E0946EF9F3B /* Pods-Every.DoItAgain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Every.DoItAgain.release.xcconfig"; path = "Pods/Target Support Files/Pods-Every.DoItAgain/Pods-Every.DoItAgain.release.xcconfig"; sourceTree = "<group>"; };
 		E9B941374FCB24FA746A8661 /* Pods_Every_DoItAgain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Every_DoItAgain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -92,12 +95,14 @@
 				43ACAA251EFACE3700D5BE49 /* PriorityTextField.m */,
 				43ACAA211EFACBA700D5BE49 /* AddItemViewController.h */,
 				43ACAA221EFACBA700D5BE49 /* AddItemViewController.m */,
+				43ACAA0D1EFA459900D5BE49 /* DetailViewController.h */,
+				43ACAA0E1EFA459900D5BE49 /* DetailViewController.m */,
+				43ACAA391EFB0FA800D5BE49 /* LoginViewController.h */,
+				43ACAA3A1EFB0FA800D5BE49 /* LoginViewController.m */,
 				43ACAA271EFADDDC00D5BE49 /* TaskViewController.h */,
 				43ACAA281EFADDDC00D5BE49 /* TaskViewController.m */,
 				43ACAA0A1EFA459900D5BE49 /* MasterViewController.h */,
 				43ACAA0B1EFA459900D5BE49 /* MasterViewController.m */,
-				43ACAA0D1EFA459900D5BE49 /* DetailViewController.h */,
-				43ACAA0E1EFA459900D5BE49 /* DetailViewController.m */,
 				43ACAA101EFA459900D5BE49 /* Main.storyboard */,
 				43ACAA131EFA459900D5BE49 /* Assets.xcassets */,
 				43ACAA151EFA459900D5BE49 /* LaunchScreen.storyboard */,
@@ -259,6 +264,7 @@
 				43ACAA291EFADDDC00D5BE49 /* TaskViewController.m in Sources */,
 				43ACAA231EFACBA700D5BE49 /* AddItemViewController.m in Sources */,
 				43ACAA0C1EFA459900D5BE49 /* MasterViewController.m in Sources */,
+				43ACAA3B1EFB0FA800D5BE49 /* LoginViewController.m in Sources */,
 				43ACAA061EFA459900D5BE49 /* AppDelegate.m in Sources */,
 				43ACAA031EFA459900D5BE49 /* main.m in Sources */,
 				43ACAA331EFAFFAC00D5BE49 /* MyThemes.m in Sources */,
